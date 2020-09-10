@@ -89,23 +89,23 @@ font-size:70px;
 }
 .mdwordpressdiv
 {
-    background-color: #EEE;
+    background-color: #EEE; 
 }
 
 .mdwordpressdiv div
 {
-padding-top:20px;
-padding-bottom:20px;
+padding-top:12px;
+padding-bottom:12px;
 }
 .mddomaincont
 {
-padding-top:20px;
-padding-bottom:20px;
+padding-top:12px;
 }
 .mdcontproducts
 {
 background-color:#FFF;
 max-width:1000px;
+box-shadow: 0px 0px 1px 0px #5a515d4f;
 }
 </style>
 
@@ -136,7 +136,7 @@ max-width:1000px;
 
 <div class="mdaccountdivpopup" id="mdaccountdivpopup">
 <div class="container">
-<i class="fas fa-times float-right" id="closethelogin"></i>
+<i class="fas fa-times float-right" style="cursor:pointer;" id="closethelogin"></i>
 
 <form id="loginform">
 <h4 style="margin-top:10px;">Login</h4>
@@ -183,11 +183,11 @@ max-width:1000px;
 
 <div class="container-fluid mddoamin">
 <div class="container mddomaincont">
-<h3 class="text-center mddomain">Get a Domain Name</h3>
+<h3 class="text-center mddomain text-dark">Get a Domain Name</h3>
 <div class="input-group mb-3">
   <input type="text" class="form-control" placeholder="yourbusiness.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
   <div class="input-group-append">
-    <button class="btn btn-primary" type="button">Search</button>
+    <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
   </div>
 </div>
 </div>
@@ -197,13 +197,14 @@ max-width:1000px;
 <div class="container-fluid mdwordpressdiv bg-light">
 <div class="container mdcontproducts">
 <div class="row">
-<div class="col-sm-1 col-xs-12 mycol">
+<div class="col-sm-1 col-xs-12 mycol text-dark">
 <i class="fab fa-wordpress mdserver"></i>
 </div>
 <div class="col-sm-4 col-xs-12 mycol">
-<h3>Wordpress Hosting</h3>
-<p>73% of the websites are powered by wordpress around the globe!</p>
-<a  href="#" class="btn btn-primary">Get Started</a>
+<h3 class="text-dark">Wordpress Hosting</h3>
+<p class="text-dark">73% of the websites are powered by wordpress around the globe!</p>
+<h4 class="card-title pricing-card-title text-dark">$15<small class="text-muted"> /mo</small></h4>
+<a  href="#" class="btn btn-primary">Wordpress Hosting</a>
 </div>
 
 <div class="col-sm-2 col-xs-0">
@@ -212,13 +213,14 @@ max-width:1000px;
 
 
 <div class="col-sm-1 col-xs-12 mycol">
-<i class="fab fa-linux mdserver"></i>
+<i class="fab fa-linux mdserver text-dark"></i>
 </div>
 
 <div class="col-sm-4 col-xs-12 mycol">
-<h3>Linux Hosting</h3>
-<p>World's one of the most used hosting includes PHP, Cpanel, and Emails</p>
-<a  href="#" class="btn btn-primary">Explore More</a>
+<h3 class="text-dark">Linux Hosting</h3>
+<p class="text-dark">World's one of the most used hosting includes PHP, Cpanel, and Emails</p>
+<h4 class="card-title pricing-card-title text-dark">$10<small class="text-muted"> /mo</small></h4>
+<a  href="#" class="btn btn-primary">Linux Hosting</a>
 </div>
 </div>
 
@@ -226,12 +228,13 @@ max-width:1000px;
 
 <div class="row">
 <div class="col-sm-1 col-xs-12 mycol">
-<i class="fab fa-windows mdserver"></i>
+<i class="fab fa-windows mdserver text-dark"></i>
 </div>
 <div class="col-sm-4 col-xs-12 mycol">
-<h3>Windows Hosting</h3>
-<p>73% of the websites are powered by wordpress around the globe!</p>
-<a  href="#" class="btn btn-primary">Get Started</a>
+<h3 class="text-dark">Windows Hosting</h3>
+<p class="text-dark">73% of the websites are powered by wordpress around the globe!</p>
+<h4 class="card-title pricing-card-title text-dark">$12<small class="text-muted"> /mo</small></h4>
+<a  href="#" class="btn btn-primary">Windows Hosting</a>
 </div>
 
 <div class="col-sm-2 col-xs-0">
@@ -240,13 +243,14 @@ max-width:1000px;
 
 
 <div class="col-sm-1 col-xs-12 mycol">
-<i class="fa fa-lock mdserver"></i>
+<i class="fa fa-lock mdserver text-dark"></i>
 </div>
 
 <div class="col-sm-4 col-xs-12 mycol">
-<h3>SSL Certificate</h3>
-<p>World's one of the most used hosting includes PHP, Cpanel, and Emails</p>
-<a  href="#" class="btn btn-primary">Explore More</a>
+<h3 class="text-dark">SSL Certificate</h3>
+<p class="text-dark">World's one of the most used hosting includes PHP, Cpanel, and Emails</p>
+<h4 class="card-title pricing-card-title text-dark">$30<small class="text-muted"> /yr</small></h4>
+<a  href="#" class="btn btn-primary">SSL Certificate</a>
 </div>
 
 
@@ -263,6 +267,7 @@ background-color:#7952b3;
 height:auto;
 padding-top:20px;
 padding-bottom:20px;
+display:none;
 }
 .mdcontcontdiv
 {
@@ -322,12 +327,23 @@ max-width:300px;
 height:auto;
 min-height:100px;
 padding-top:20px;
+border-top:10px solid #7952b3;
 }
 .mdsocial
 {
 font-size:1.5em;
 }
 
+.fa-facebook-square {
+    color: #3b5998;
+}
+.fa-twitter-square {
+    color: #00aced;
+}
+
+.fa-linkedin{
+    color: #007bb6;
+}
 </style>
 
 
@@ -339,9 +355,9 @@ font-size:1.5em;
 <div class="col-lg-5 col-md-6 col-sm-12">
 <h5 class="text-dark">FugoHost INC</h5>
 <p class="text-dark">192, 13th Street, Manhattan, New York, United States</p>
-<a href="#"><span class="fab fa-facebook-square mdsocial text-dark"></span></a>
-<a href="#"><span class="fas fa-linkedin-square mdsocial text-dark"></span></a> 
-<a href="#"><span class="fab fa-twitter-square mdsocial text-dark"></span></a> 
+<a href="#"><span class="fab fa-facebook-square mdsocial"></span></a>
+<a href="#"><span class="fab fa-linkedin mdsocial"></span></a> 
+<a href="#"><span class="fab fa-twitter-square mdsocial"></span></a> 
 </div>
 <div class="col-lg-2 col-md-6 col-sm-12">
 <ul class="list-unstyled">
